@@ -1,5 +1,27 @@
+import java.util.Arrays;
+
+
+
 
 public class Searching {
+
+
+	
+	public static int expSearch(int[] arr, int length, int value) {
+		//  if value is at position one
+		if ( arr[0] == value) {
+			return 0;
+		}
+		
+		// find the range for the binary search
+		int i = 1;
+		while ( i < length && arr[i] <= value) {
+			i = i * 2;
+		}
+		
+		//now call the binary search
+		return Arrays.binarySearch(arr, (i/2),Math.min(i, length),value);
+	}
 
 	public static int binarySearch(int arr[] ,int value) {
 		int start = 0;
@@ -48,5 +70,8 @@ public class Searching {
 		System.out.println("The element " + value + " not found");
 		return -1;
 	}
+
+
+	
 	
 }
