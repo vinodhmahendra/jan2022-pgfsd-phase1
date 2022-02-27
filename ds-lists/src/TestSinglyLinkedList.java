@@ -5,6 +5,8 @@ public class TestSinglyLinkedList {
 		SinglyLinkedList singlyLinkedList = 
 				new SinglyLinkedList();
 		
+		singlyLinkedList.deletionOfNode(0);
+		
 		singlyLinkedList.createSinglyLinkedList(7);
 		
 		singlyLinkedList.insertInLinkedList(5, 0);
@@ -17,6 +19,21 @@ public class TestSinglyLinkedList {
 		singlyLinkedList.insertInLinkedList(60, 4);
 		
 		singlyLinkedList.traverseSinglyLinkedList();
+		
+//		singlyLinkedList.searchNode(100);
+//		singlyLinkedList.searchNode(10);
+//		
+//		singlyLinkedList.deletionOfNode(0);
+//		singlyLinkedList.traverseSinglyLinkedList();
+//		
+		
+		singlyLinkedList.deletionOfNode(5);
+		singlyLinkedList.traverseSinglyLinkedList();
+		
+//		singlyLinkedList.deletionOfNode(3);
+//		singlyLinkedList.traverseSinglyLinkedList();
+//		
+		singlyLinkedList.deleteSLL();
 	}
 
 }
